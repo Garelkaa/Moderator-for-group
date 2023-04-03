@@ -1,8 +1,8 @@
-TOKEN = '5521578912:AAGv-11Jq_z_e_97kRr3f6q6dcQwPS1Piow'
+TOKEN = '' #bot Token
 
-CHANNEL_URL = 'https://t.me/MusicVibeXule'
+CHANNEL_URL = '' #URL channel
 
 
-GROUP_ID = '@GarelkaChat'
-#626452615
-WORDS = ["матюк", "мать сдохла", "безмамный", "мамка твоя", "йобана мать", "ты о своей маме?", "мать здохла","сдохла мать" ,"маме о своей ты?" ,"мать йобана" ,"твоя мамка" , "сдохла мать"]
+GROUP_ID = '@#namegroup'
+
+WORDS = [] #banWords
