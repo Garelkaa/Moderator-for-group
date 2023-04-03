@@ -11,7 +11,7 @@ dp.filters_factory.bind(IsAdminFilter)
 
 @dp.message_handler(content_types=["new_chat_members"])
 async def user_joined(message: types.Message):
-    await message.answer("Салам!\n Подпишись на канал пж если не лошара", reply_markup=nav.channelMenu)
+    await message.answer("Здравствуйте!", reply_markup=nav.channelMenu)
 
 @dp.message_handler(content_types=["left_chat_member"])
 async def left_chat(message: types.Message):
@@ -26,7 +26,7 @@ async def ban(message: types.Message):
     
     await message.bot.delete_message(cfg.GROUP_ID, message.message_id)
     await message.bot.ban_chat_member(chat_id=cfg.GROUP_ID, user_id=message.reply_to_message.from_user.id)
-    await message.reply_to_message.reply('Пользователь в бане\n Ну и ладно!')
+    await message.reply_to_message.reply('Пользователь в бане')
 
 @dp.message_handler(is_admin=True, commands=["kick"], commands_prefix="!/")
 async def kick(message: types.Message):
